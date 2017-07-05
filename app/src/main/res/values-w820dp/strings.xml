@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Loginbtn">Login</string>
+    <string name="not_have_an_account">Not have an account? Sign Up</string>
+    <string name="register">User Register</string>
+    <string name="have_account">Have an account? Sign In</string>
+    <string name="Registerbtn">Register</string>
+</resources>

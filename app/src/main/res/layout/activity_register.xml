@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.roshan.easypetrol.Authentication.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#00b"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_user_register"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/register"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="190dp"
+            android:layout_height="170dp"
+            android:src="@drawable/default_user"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/user_image" />
+
+        <RadioGroup
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_user"
+                android:layout_weight="1.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:text= "  User"/>
+
+            <RadioButton
+                android:textColor="@android:color/black"
+                android:id="@+id/rb_pump"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Petrol Pump"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:inputType="textWebEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user_register"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter  Email"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:inputType="textWebPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_email"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter Password"/>
+
+        <EditText
+            android:id="@+id/edit_confirm_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_password"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Re-enter Password"/>
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_confirm_password"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter Phone Number"/>
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:inputType="textAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_phone"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Enter Address"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/btn_register"
+            android:text="@string/Registerbtn"
+            android:layout_gravity="center_horizontal"
+          />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:id="@+id/txt_sign_in"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="@string/have_account"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
